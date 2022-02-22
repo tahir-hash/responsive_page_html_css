@@ -1,0 +1,420 @@
+.openmenu, .closemenu
+{
+    display: none;
+}
+body
+{
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+}
+*
+{
+   box-sizing: border-box;
+}
+/*HEADER*/
+header
+{
+    height: 20%;
+    display: grid;
+    justify-content: space-between;
+}
+header .menu ul
+{
+    display: grid;
+    list-style: none;
+    justify-content: space-evenly;
+}
+header  .menu ul li 
+{
+    display: list-item;
+    padding: 0.75em;
+    margin: 0 1.563em;
+    font-size: 17px;
+}
+header .menu a
+{
+    text-decoration: none;
+    color: #252b45;
+    font-weight: bold;
+}
+header .menu a:hover       
+{
+    color: #fa4a0c;
+}
+/*CORPS DE LA PAGE*/
+main
+{
+    height: 65%;
+}
+
+.start
+{
+    display: grid;
+    height: 40%;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(75, 72, 72, 0.8), rgba(88, 85, 85, 0.8)), url(img/food.png), no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 12.5%;
+
+}
+.start *
+{
+    z-index: 1;
+}
+.contain
+{
+    height: 60%;
+}
+
+.start h3 
+{
+    font-size: 1.625em;
+    text-align: center;
+    margin-bottom: -2%;
+}
+
+.start h2 
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 3.75em;
+    font-weight: bold;
+    width: 80%;
+    text-align: center;
+    display: grid;
+    margin-left: 15%;
+}
+
+.start h4 
+{
+    color: #f6f6f6;
+    font-weight:lighter;
+    font-size: 1.5em;
+    margin-bottom: 4%;
+    margin-top: -1%;
+}
+.download
+{
+    width: 80%;
+}
+
+.app
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.563em;
+    border: white solid 0.063em;
+    border-radius: 1.875em;
+    padding: 1.5% 5% 2% 4%;
+    margin: 1% 1% 2% 1%;
+}
+.app:hover
+{
+    background-color: #fa4a0c;
+}
+
+.telephone
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: -6%; 
+    margin-bottom: 4%;
+}
+hr 
+{
+    position: relative;
+    border-radius: 1.875em;
+    border: 0.188em solid #e4e4e4;
+    background-color: #e4e4e4;
+    margin: 0.2% 19% 0 19%;
+}
+.subcontain h1
+{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 3.125em;
+}
+.rect1
+{
+    display: grid;
+}
+
+
+.text
+{
+    width: 30%;
+    display: grid;
+    flex-direction: column;
+    margin-top: 13%;
+    line-height: 0.313em;
+    margin-left:14% ;
+}
+.rect1 h1
+{
+    color: black;
+    font-size: 2.813em;
+    line-height: normal;
+}
+.rect1 h3
+{
+    font-size: 1.438em;
+    color: #fa4a0c;
+}
+.rect1 p
+{
+    color: #737373;
+    line-height: normal;
+    width: 80%;
+    font-size: 1.438em;
+}
+
+.rect1 img
+{
+    margin-left: 8%;
+}
+
+.texte
+{
+    width: 33%;
+    display: grid;
+    flex-direction: column;
+    margin-top: 13%;
+    line-height: 0.313em;
+    margin-left:16% ;
+}
+.rect1 h1
+{
+    color: black;
+    font-size: 2.813em;
+    line-height: normal;
+}
+.rect1 h3
+{
+    font-size: 1.438em;
+    color: #fa4a0c;
+}
+.rect1 p
+{
+    color: #737373;
+    line-height: normal;
+    width: 80%;
+    font-size: 1.438em;
+}
+/*others*/
+.rect2
+{
+    display: grid;
+    margin-top: -10%;
+}
+.rect2 img
+{
+    margin-left: 23%;
+}
+
+.texte
+{
+   width: 28%;
+    display: grid;
+    flex-direction: column;
+    margin-top: 13%;
+    line-height: 0.313em;
+    margin-left:13% ;
+}
+.rect2 h1
+{
+    color: black;
+    font-size: 2.5em;
+    line-height: normal;
+}
+.rect2 h3
+{
+    font-size: 1.438em;
+    line-height: normal;
+    color: #fa4a0c;
+}
+.rect2 p
+{
+    color: #737373;
+    line-height: normal;
+    width: 80%;
+    font-size: 1.438em;
+}
+/*FOOTER*/
+footer
+{
+    display: grid;
+    height: 18%;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+.sn, .copy
+{
+    margin-top: 2%;
+}
+.sn 
+{
+    display: grid;
+    justify-content: space-between;
+    height: 10%;
+}
+.sn img
+{
+    margin-right: 27%;
+}
+/* VERSION MOBILE*/
+@media (max-width: 750px) 
+{
+    .openmenu
+    {
+        display: unset;
+        color: #737373;
+        height: 30px;
+        width: 35px;
+        padding: 7% 0.5% 0.5% 0.7% ;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .start
+    {
+        background: none;
+    }
+    .start h3 ,.start h4
+    {
+        color: #737373;
+        text-align: center;
+    }
+    .start h2
+    {
+        color: #252b45;
+        font-family: "Poppins", sans-serif;
+        font-size: 58px;
+        font-weight: bold;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        margin-left: 10%;
+    }
+    .download
+    {
+        width: 50%;
+       
+    }
+    .app
+    {
+        display: flex;
+       flex-direction: column;
+        text-decoration: none;
+        color: #252b45;
+        font-size: 25px;
+        border: #fa4a0c solid 1px;
+        border-radius: 30px;
+        padding: 1% 4% 2% 4%;
+        margin: 1% 1% 2% 1%;
+    }
+    .telephone
+    {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: -22%;
+    }
+}
+.download
+    {
+        width: 30%;
+    }
+    .app
+    {
+        display: grid;
+        grid-template-rows: repeat(2, 0.2fr);
+        text-decoration: none;
+        color: #252b45;
+        font-size: 1.563em;
+        border: #fa4a0c solid 1px;
+        border-radius: 30px;
+        padding: 1% 4% 2% 4%;
+        margin: 1% 1% 2% 1%;
+    }
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="desktop.css">
+    <title>Bella olonge</title>
+</head>
+<body>
+   <header>
+        <img src="img/Logo.png" alt="">
+        <div class="openmenu"><i class="fa fa-bars"></i></div>
+       <div class="menu">
+           <ul>
+            <div class="closemenu"><i class="fa fa-times"></i></div>
+               <li><a href="desktop.html">Home</a> </li>
+               <li><a href="desktop.html">Product</a> </li>
+               <li><a href="desktop.html">Faq</a> </li>
+               <li><a href="desktop.html">Contact</a> </li>
+           </ul>
+       </div>
+   </header>
+   <main>
+    <div class="start">
+        <h3>Food App</h3>
+        <h2>Why stay hungry when you can order from Bella Onojie</h2>
+        <h4>Download the bella onoje’s food app now on</h4>
+        <div class="dowloaod">
+            <a href="" class="app">Playstore</a>
+            <a href="" class="app">App Store</a>
+        </div>
+        
+    </div>
+    <div class="contain">
+        <div class="telephone">
+            <img src="img/tel-group.png" height="550rem" alt="">
+        </div>
+        <hr>
+        <div class="subcontain">
+            <h1>How the app works</h1>
+        </div>
+        <div class="rect1">
+            <img src="img/rect1.png" alt="">
+            <div class="text">
+                <h3>Create an account</h3>
+                <h1>Create/login to an existing account to get started</h1>
+                <p>An account is created with your email<br> and a desired password</p>
+            </div>
+        </div>
+        <div class="rect2">
+            <div class="texte">
+                <h3>Explore varieties</h3>
+                <h1>Shop for your favorites meal as e dey hot.</h1>
+                <p>Shop for your favorite meals or drink<br> and enjoy while doing it.</p>
+            </div>
+            <img src="img/rect2.png" alt="">
+        </div>
+    </div>
+   </main>
+   <footer>
+       <div class="logo larg">
+           <img src="img/Logo.png"  alt="">
+       </div>
+       <div class="sn larg">
+           <img src="img/twt.png"   alt="">
+           <img src="img/face.png"  alt="">
+           <img src="img/insta.png" alt="">
+       </div>
+       <div class="copy larg">
+           <h3 style="color: #737373">©Copyright 2021 Bella Onojie.com</h3>
+       </div>
+   </footer>
+</body>
+</html>

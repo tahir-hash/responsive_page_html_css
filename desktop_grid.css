@@ -1,0 +1,236 @@
+@media (min-width: 750px) 
+{
+    .openmenu, .closemenu, .copy1
+    {
+        display: none;
+    }
+    body
+    {
+        font-family: "Montserrat", sans-serif;
+        height: 100%;
+    }
+    *
+    {
+    box-sizing: border-box;
+    }
+    /*HEADER*/
+    header
+    {
+        width: 100%;
+        height: 20%;
+        display: grid;
+        margin-top: 1%;
+        grid-template-columns: 2fr  4fr;
+    }
+    .head
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        list-style: none;
+        margin-left: 30%;
+        text-align: center;
+        justify-content: center;
+    }
+    header  .menu ul li 
+    {
+        padding-left: 40%;
+        font-size: 1.25em;
+    }
+    header .menu a
+    {
+        text-decoration: none;
+        color: #252b45;
+        font-weight: bold;
+    }
+    header .menu a:hover       
+    {
+        color: #fa4a0c;
+    }
+    header img
+    {
+        margin-left: 15%;
+    }
+    /*CORPS DE LA PAGE*/
+    main
+    {
+        height: 65%;
+    }
+
+    .start
+    {
+        height: 40%;
+        background: linear-gradient(0deg, rgba(75, 72, 72, 0.8), rgba(88, 85, 85, 0.8)), url(img/food.png), no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+        padding: 12.5%;
+    }
+    .start *
+    {
+        z-index: 1;
+    }
+    .contain
+    {
+        height: 60%;
+    }
+
+    .start h3 
+    {
+        font-size: 1.625em;
+        text-align: center;
+        margin-bottom: -2%;
+    }
+
+    .start h2 
+    {
+        font-family: "Poppins", sans-serif;
+        font-size: 3.75em;
+        font-weight: bold;
+        width: 80%;
+        text-align: center;
+        margin-left: 15%;
+    }
+
+    .start h4 
+    {
+        color: #f6f6f6;
+        font-weight:lighter;
+        font-size: 1.5em;
+        margin-bottom: 4%;
+        margin-top: -1%;
+    }
+    .download
+    {
+        width: 80%;
+    }
+
+    .app
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 1.563em;
+        border: white solid 0.063em;
+        border-radius: 1.875em;
+        padding: 1.5% 5% 2% 4%;
+        margin: 1% 1% 2% 1%;
+    }
+    .app:hover
+    {
+        background-color: #fa4a0c;
+    }
+    .telephone
+    {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: -6%; 
+        margin-bottom: 4%;
+    }
+    hr 
+    {
+        position: relative;
+        border-radius: 1.875em;
+        border: 0.188em solid #e4e4e4;
+        background-color: #e4e4e4;
+        margin: 0.2% 19% 0 19%;
+    }
+    .subcontain h1
+    {
+        text-align: center;
+        margin-top: 3%;
+        font-size: 3.125em;
+    }
+    .rect1
+    {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+    }
+    .text
+    {
+        width: 70%;
+        margin-top: 13%;
+        margin-left:14% ;
+    }
+    .rect1 h1
+    {
+        color: black;
+        font-size: 2.813em;
+        line-height: normal;
+    }
+    .rect1 h3
+    {
+        font-size: 1.438em;
+        color: #fa4a0c;
+    }
+    .rect1 p
+    {
+        color: #737373;
+        line-height: normal;
+        width: 80%;
+        font-size: 1.438em;
+    }
+    .rect1 img
+    {
+        margin-left: 17%;
+    }
+    /* others*/
+    .rect2
+    {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr;
+        margin-top: -7%;
+    }
+    .rect2 img
+    {
+        margin-left: 23%;
+    }
+
+    .texte
+    {
+        width: 65%;
+        margin-top: 19%;
+        margin-left:20% ;
+    }
+    .rect2 h1
+    {
+        color: black;
+        font-size: 2.5em;
+        line-height: normal;
+    }
+    .rect2 h3
+    {
+        font-size: 1.438em;
+        line-height: normal;
+        color: #fa4a0c;
+    }
+    .rect2 p
+    {
+        color: #737373;
+        line-height: normal;
+        width: 80%;
+        font-size: 1.438em;
+    }
+    /*FOOTER*/
+    footer
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 10%;
+    }
+    .logo
+    {
+        padding-left: 12%;
+    }
+    .sn, .copy
+    {
+        margin-left: 15%;
+        margin-top: 4%;
+    }
+    .sn
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        justify-content: center;
+    }
+}
